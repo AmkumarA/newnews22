@@ -6,11 +6,11 @@ import { BuzzComponent } from './buzz/buzz.component';
 import { SportComponent } from './sport/sport.component';
 import { EntertainmentComponent } from './entertainment/entertainment.component';
 const routes: Routes = [
-  {path:'',component:TopheadlinesComponent},
-  {path:'tech', component:TechComponent},
-  {path:'buzz', component:BuzzComponent},
-  {path:'sport', component:SportComponent},
-  {path:'entertain', component:EntertainmentComponent}
+  {path:'',component:TopheadlinesComponent, pathMatch:"full"},
+  {path:'tech', component:TechComponent, pathMatch:"full"},
+  {path:'buzz', component:BuzzComponent, pathMatch:"full"},
+  {path:'sport', component:SportComponent, pathMatch:"full"},
+  {path:'entertain', component:EntertainmentComponent, pathMatch:"full"}
 ];
 
 @NgModule({
